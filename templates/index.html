@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Stream with External Content</title>
+</head>
+<body style="margin: 0;">
+    <img id="camera-stream" src="{{ url_for('video_feed') }}" style="width: 100%; height: 100%; object-fit: cover;">
+    <div id="external-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <!-- iframe to display live page -->
+        <iframe src="https://webticker.cricheroes.in/gy-theme-ticker/11208656" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+</body>
+</html>
